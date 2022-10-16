@@ -105,6 +105,73 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ],
         ),
+        SizedBox(
+          height: 15,
+        ),
+        Row(
+          children: [SizedBox(width: 15,),
+            SizedBox(width: 200, height: 200,child: Image.asset('lib/assets/1234.jpg')),
+            SizedBox(width: 15,),
+            Column(children: [const Text(
+              'Маслов Дмитрий Олегович',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Text('Информация о персоне...'),],),
+          ],
+        ),
+        SizedBox(height: 20,),
+        Row(
+          children: [
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Proff()),
+                );
+              },
+              child: Text('Профессиональная деятельность'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Timetable()),
+                );
+              },
+              child: Text('Расписание'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Copilca()),
+                );
+              },
+              child: Text('Методическая копилка'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Xobbi()),
+                );
+              },
+              child: Text('Хобби'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Contacts()),
+                );
+              },
+              child: Text('Контакты'),
+            ),
+          ],
+        ),
       ]),
     );
   }
