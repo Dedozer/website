@@ -16,10 +16,27 @@ class Timetable extends StatelessWidget {
         rows: [
           DataRow(
             cells: [DataCell(Text('Понедельник')),DataCell(Text('Школа')), DataCell(Text('12:00-15:00')),
+            ],
+          ),
+          DataRow(
+            cells: [
             DataCell(Text('Вторник')),DataCell(Text('Школа')), DataCell(Text('12:00-15:00')),
+            ],
+          ),
+          DataRow(
+            cells: [
             DataCell(Text('Среда')),DataCell(Text('Школа')), DataCell(Text('12:00-15:00')),
+            ],
+          ),
+          DataRow(
+            cells: [
             DataCell(Text('Четверг')),DataCell(Text('Школа')), DataCell(Text('12:00-15:00')),
-            DataCell(Text('Пятница')),DataCell(Text('Отдых')), DataCell(Text('11:00-19:00')),],
+            ],
+          ),
+          DataRow(
+            cells: [
+            DataCell(Text('Пятница')),DataCell(Text('Отдых')), DataCell(Text('11:00-19:00')),
+            ],
           ),
         ],
       ),
